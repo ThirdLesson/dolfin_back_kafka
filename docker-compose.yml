@@ -23,6 +23,7 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
+      KAFKA_HEAP_OPTS: "-Xmx256m -Xms256m"
     depends_on:
       - zookeeper
 
@@ -40,5 +41,6 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
+      KAFKA_HEAP_OPTS: "-Xmx256m -Xms256m"
     depends_on:
       - zookeeper
